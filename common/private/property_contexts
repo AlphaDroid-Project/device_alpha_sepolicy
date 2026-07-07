@@ -58,3 +58,7 @@ persist.sysui.disable_mirroring_confirmation_dialog u:object_r:hdmi_config_prop:
 # USB
 ro.usb.uvc.disable_video_encode_flag   u:object_r:usb_uvc_config_prop:s0
 vendor.usb.uvc.payload_transfer_size   u:object_r:usb_uvc_config_prop:s0
+
+# SurfaceFlinger refresh-rate overlay: optional sysfs node providing the real
+# panel (self-)refresh rate, read by RefreshRateOverlay
+ro.surface_flinger.panel_refresh_rate_node u:object_r:surfaceflinger_prop:s0 exact string
